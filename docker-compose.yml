@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+    app:
+      build: ./
+      working_dir: /app/express
+      tty: true
+      volumes:
+        - ./express:/app/express
+      ports:
+        - 8080:3000
